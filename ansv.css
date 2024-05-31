@@ -1,0 +1,324 @@
+.main_slide{
+   width: 55%;
+   height: 100%;
+   border-radius: 20px;
+   background: linear-gradient(180deg, #AAD8F1 0%, #E98A75 100%);
+   margin: 0 auto;
+   margin-top: 20px;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+.s1{
+   width: 68%;
+   height: 3vw;
+   margin: 0 auto;
+   background: #FEF4F4;
+   border-radius: 41px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+span{
+   font-family: "neu";
+   font-size: 1.2vw;
+}
+.d1{
+   display: flex;
+}
+.s2_span span{
+   font-size: 1.1vw;
+}
+.s2_span{
+   width: 34vw;
+   height: 9.8vw;
+   background-color: #FEF4F4;
+   border-radius: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+.s2_pic{
+   width: 30%;
+   margin-left: 2%;
+   margin-top: 2%;
+   /* background-color:#a3a3a3; */
+}
+.krug{
+   margin-left: 30px;
+   width: 65%;
+   height: 100%;
+   border-radius: 50%;
+   background-color: #EA7E5C;
+   box-shadow: inset 0px 15px 4px rgba(0, 0, 0, 0.25);
+   position: relative;
+}
+.krug img{
+   position: absolute;
+}
+.k1{
+   top: 60px;
+   right: 70px;
+}
+.k2{
+   left: 80px;
+}
+.d2{
+   display: flex;
+   position: relative;  
+   right: -35%;
+}
+#pract{
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   width: 30%;
+   height: 105px;
+   background: #1181bd;
+   box-shadow: inset 0px 4px 4px rgb(255, 255, 255);
+   border-radius: 20px;
+   margin-top: 3vw;
+}
+button span{
+   font-size: 1.8vw;
+}
+#pract:hover{
+   background: #2a68a1;
+   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.d3 div{
+   position: relative;  
+   right: -2.5%;
+}
+
+.main_test1 {
+      width: 55%;
+      height: 600px;
+      margin: 20px auto 0;
+      padding: 20px;
+      display: flex;
+      position: relative;
+}
+      
+.test_zad {
+      width: 35%;
+      height: 18vw;
+      border-radius: 20px;
+      position: absolute;
+      margin-top: 50px;
+      background: #FFFFFF;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      z-index: 1;
+      padding: 20px;
+}
+.test_zad p{
+   color: black;
+   font-family: "neu";
+   font-weight: 400;
+   font-size: 1.1vw;
+   line-height: 1.2vw;
+}
+      
+.test_q1 {
+      width: 83%;
+      height: 100%;
+      background-color: #ffffff;
+      border-radius: 60px;
+      z-index: 0;
+      overflow: hidden;
+      margin-left: 150px;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+.test_q2 {
+      width: 70%;
+      height: 100%;
+      background-color: #ffffff;
+      border-radius: 60px;
+      z-index: 0;
+      overflow: hidden;
+      margin-left: 150px;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+      
+.test_vars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 20px;
+      width: 70%;
+      position: absolute;
+      top: 10%;
+}
+      
+.test_vars button {
+      width: 45%;
+      height: 130px;
+      background: #ffffff;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 20px;
+      padding: 10px;
+      color: black;
+      font-family: "neu";
+      font-weight: 400;
+      font-size: 1.1vw;
+      line-height: 1.2vw;
+}
+/* .test_vars button:hover{
+   background: #bdbed0;
+   box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+} */
+.otvet{
+   position: absolute;
+   top: 65%;
+   right: 13%;
+   width: 45%;
+   height: 20%;
+   background: #465989;
+   box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+   border-radius: 20px;
+   cursor: pointer;
+   color: rgb(255, 255, 255);
+   font-family: "neu";
+   font-weight: 400;
+   font-size: 2vw;
+}
+.otvet:hover{
+   background: #e4703f;
+   box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.display{
+   display: none;
+}
+.opacity{
+   opacity: 0.5;
+}
+.slider {
+   -webkit-appearance: none;  /* Override default CSS styles */
+   appearance: none;
+   width: 80%; /* Full-width */
+   height: 7%; /* Specified height */
+   background: radial-gradient(rgb(167, 36, 36), rgb(32, 32, 157)); /* Grey background */
+   outline: none; /* Remove outline */
+   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+   transition: opacity .2s;
+   transform: rotate(-90deg); /* Поворачиваем на 90 градусов для вертикали */
+   border: solid white 4px;
+   border-radius: 20px;
+   position: absolute;
+   top: 30%;
+   right: -30%;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   background-image: url(img/snej.png);
+   background-size: cover;
+    width: 45px; 
+   height: 45px; 
+   /*background: #4CAF50; Green background */
+   cursor: pointer; /* Cursor on hover */
+   border-radius: 50%;
+   border:solid #e7f1f7  4px;
+}
+
+.slider::-moz-range-thumb {
+   width: 45px; 
+   height: 45px; 
+   background-image: url(img/snej.png);
+   background-size: cover;
+   /* background: #4CAF50;  */
+   cursor: pointer; /* Cursor on hover */
+   border-radius: 50%;
+   border:solid #e7f1f7  4px;
+}
+.scobki{
+   height: 30%;
+}
+.var{
+   width: 100%;
+   background: #e7f1f7;
+   height: 20%;
+   margin-top: 15%;
+   border-radius: 20px;
+   text-align: center;
+   align-items: center;
+   padding: 20%;
+}
+
+button:active{
+   background-color: #7d89a7;
+   color: #fff;
+   transform: translateY(1px);
+}
+.wrongs{
+   width: 20%;
+   height: 10%;
+   border: solid rgb(48, 50, 67) 4px;
+   border-radius: 20px;
+   position: absolute;
+   top: 20%;
+   left: 40%;
+   background: #FFFFFF;
+   color: black;
+   font-family: 'neu';
+   text-align: center;
+   z-index: 1;
+   align-items: center;
+   padding: 10px;
+}
+.var1{
+   width: 100%;
+   background: #e7f1f7;
+   height: 110%;
+   margin-top: 15%;
+   border-radius: 20px;
+   text-align: center;
+   align-items: center;
+   /* padding: 20%; */
+}
+.formula{
+   width: 60%;
+   background: #e7f1f7;
+   height: 80px;
+   position: absolute;
+   top: 30%;
+   right: 5%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   padding: 2%;
+   border: solid 5px rgb(91, 83, 123);
+   border-radius: 20px;
+}
+.test_vars1 {
+   /* display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end; */
+   align-items: center;
+   margin-right: 20px;
+   width: 70%;
+   height: 100%;
+   position: absolute;
+   top: 10%;
+}
+.over{
+   margin: 0 auto;
+   background: rgb(255, 255, 255);
+   width: 60%;
+   height: 350px;
+   border: 4px dotted rgb(135, 154, 224);
+   border-radius: 20px;
+   text-align: center;
+}

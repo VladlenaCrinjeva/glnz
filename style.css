@@ -1,0 +1,223 @@
+@font-face {
+	font-family: 'neu'; 
+	src: local('neu'),
+		url(./fonts/Neucha/Neucha.ttf); 
+}
+
+body{
+    background-color: rgb(239, 239, 247);
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0px 5px 5px rgb(226, 226, 226);
+    /* display: flex; */
+    /* background-image: url(img/header.png); */
+}
+.container{
+    width: 65%;
+    height: 100%;
+    /* background-color: rgb(175, 175, 175); */
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_container{
+    width: 65%;
+    height: 100%;
+    /* background-color: rgb(175, 175, 175); */
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+header img:not(.container img) {
+    position: absolute;
+}
+.text{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+.main_pic{
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-top: 10px;
+    /* cursor: pointer; */
+}
+.career{
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: relative;
+    box-shadow:0px 5px 5px rgb(226, 226, 226);
+    display: flex;
+}
+main a{
+    display: flex;
+    /* align-items: center;
+    margin: 0 auto; */
+    justify-content: center;
+}
+h1:not(.bloks h1){
+    font-size:20px;
+}
+p{
+    font-size:18px;
+    color: rgb(234, 133, 70);  
+}
+h1 span{
+    color: rgb(255, 33, 33);
+}
+.btn{
+    width: 170px;
+    height: 50px;
+    background-color: rgb(234, 133, 70);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 10px;
+}
+.star1{
+    position: absolute;
+    transform: rotate(11deg);
+    top: -25px;
+    right: 30px;
+}
+.star2{
+    position: absolute;
+    transform: rotate(-13deg);
+    top: 280px;
+    left: -20px;
+}
+.text1{
+    width: 43%;
+    height: 70%;
+    padding: 40px;
+    color: black;
+    font-size: 1.8vw;
+    font-family: "neu";
+}
+.bloks{
+    /* display: inline-block; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* position: relative; */
+    margin-top: 60px;
+}
+.bloks h1{
+    font-size: 1.4vw;
+    font-family: "neu";
+    color: rgb(49, 49, 49);
+}
+.bloks div{
+    display: flex;
+    flex-basis: 30%;
+    height: 100px;
+    /* margin: 5px; */
+    /* background-color: #c7beb1; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.car1{
+    transform: rotate(-17deg);
+    position: relative;
+    right: -20px;
+    background-color: #9AB5EB;
+}
+.car2{
+    transform: rotate(6deg);
+    background-color: #CF90D4;
+}
+.car3{
+    transform: rotate(-7deg);
+    background-color: #CB6D6D;
+}
+.car4{
+    transform: rotate(-10deg);
+    background-color: #F6EC90;
+}
+.car5{
+    transform: rotate(16deg);
+    background-color: #AAE9B4;
+    position: relative;
+    top: -20px;
+}
+.car6{
+    transform: rotate(7deg);
+    background-color: #F1B398;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+} 
+.popup p{
+    color: rgb(59, 59, 59); 
+    font-family: "neu"; 
+    padding: 10px;
+}
+.popup h2{
+    color: rgb(59, 59, 59); 
+    font-family: "neu"; 
+}
+.popup-content {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.popup_info{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #eff1f7;
+}
+.transition{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s, transform 1s;
+}
+.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+}
+#closeBtn{
+    margin-right: auto;
+    font-size: 15px;
+}
+.hidden_content{
+    text-align: center;
+    display: none;
+    margin-top: 20%;
+}
+@media(max-width: 1210px){
+    .main_content{
+        display: none;
+    }
+    .hidden_content{
+        display: block;
+    }
+}
