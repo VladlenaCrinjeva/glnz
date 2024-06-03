@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="img/gerb.png">
+    <title>Всё о глинозёме</title>
+</head>
+<body>
+    <div class="main_content">
+            <header>
+                <img src="img/header.png" alt="" srcset="" width="410">
+                <div class="container">
+                        <div style="display: flex;">
+                            <img src="img/gerb.png" alt="" width="100">
+                            <div class="text">
+                                <h1>АКОТБ</h1>
+                                <p>Металлургия</p>
+                            </div>
+                        </div>
+                    <div>
+                        <button onclick="showInfo()" class="btn"><h2>Информация</h2></button>
+                    </div>
+                </div>
+            </header>
+
+    <div class="wrapper">
+            <main>
+                    <div class="main_container">
+                        <a href="ansv.html" ><img src="img/ar.png" alt="" class="main_pic transition"></a>
+
+                        <div class="career transition">
+
+                            <img src="img/star.png" alt="" width="100" class="star1">
+                            <img src="img/star.png" alt="" width="150" class="star2">
+                            <p class="text1">Глинозём играет важную роль в различных отраслях, поэтому существует несколько профессий, связанных с его производством и использованием.</p>
+        
+                            <div class="bloks">
+                                <div class="car1"><h1>Дробильщик</h1></div>
+                                <div class="car2"><h1>Аппаратчик гидрометаллург</h1></div>
+                                <div class="car3"><h1>Машинист мельниц</h1></div> 
+                                <div class="car4"><h1>Аппаратчик сгустителей</h1></div>
+                                <div class="car5"><h1>Грохотовщик</h1></div>
+                                <div class="car6"><h1>Лаборант хим.анализа</h1></div>
+                            </div>
+                        </div>
+
+<!--всплывающее окно с информацией-->
+                        <div id="popup" class="popup" onclick="closeInfo()">
+                            <div class="popup-content" onclick="event.stopPropagation()">
+                                <h2>Информация по технологическому процессу</h2>
+                                <p>⭐Не стесняйтесь использовать для решения задач!⭐</p><br>
+                                <div class="popup_info" style="line-height: 1.1vw;"><p>
+                                    Куски нефелиновой руды и известняка сначала помещают в трубные мельницы для размола 
+                                    в присутствии воды. <br>
+                                    ⭐После прохода опредленных стадий размола(для руды 4, для известянка 2), 
+                                    смесь корректируется в специальных бассейнах,
+                                    после чего направляется на спекание с помощью насосов.
+                                    <br>
+                                    При спекании глинозём обязательно должен стать растворимым в натрии и калии,
+                                    а кремнезём напротив, становится нерастворимым силикатом кальция.
+                                    Происходит это в печи, где смесь прогревается и превращается в спёк.<br><br>
+                                    
+                                    
+                                    ⭐Когда спёк остывает в печи, его темпеаратуру снижают до 900-1100С с помощью воздуха.<br>
+                                    Затем помещают в специальный холодильник для окончательного охлаждения.<br>
+                                    После чего спёк размельчают в дробилке и очищаются от пыли и выщелачивают.<br><br>
+                                    
+                                    Выщелачивание осуществляется двумя способами: проточный или агитационный.
+                                    Получаем из процесса алюминатный раствор, который подвергается обескремниванию, 
+                                    для удаления вредного кремнезёма. <br>
+                                    
+                                    В результате получаем белый шлам, который используется для приготовления шихты, 
+                                    а очищенный алюминатный раствор подаётся на карбонизацию.<br><br>
+                                    ⭐Выводим гидроксид алюминия из раствора в осадок(Na Al O2 + 2H2O → Al (OH)3 + Na OH (11)) и проведя карбонизацию, 
+                                    направляем на фильтрацию и промывку, а затем на кальцинацию.<br><br>
+                                    
+                                    ⭐Кальцинация проходит в трубчатых вращающихся печах, которые условно делятся на 
+                                    четыре зоны: сушка, кальцинация, прокалка, охлаждение.<br>
+
+                                    Полученный глинозём из холодильников подается в пневмокамерные насосы, распределяется по 
+                                    силосам склада, а затем оправляется потребителям. 
+                                </div><br>
+                                <button id="closeBtn" class="btn">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_cont2" style="display: none;">
+                        <img src="img/Rectangle 5876.png" alt="">
+                    </div>
+                   
+            </main>
+        </div>
+    </div>
+<div class="hidden_content">
+    <h1>Сайт ещё не готов для мобильных версий,<br> приносим извинения!</h1>
+    <img src="img/fre.png" alt="" width="200">
+</div>
+    <script>
+//открытие и закрытие всплывабщего окна
+        const popup = document.getElementById('popup');
+        const closeBtn = document.getElementById('closeBtn');
+
+        function showInfo() {
+        popup.style.display = 'flex';          
+             }
+
+        function closeInfo() {
+            popup.style.display = 'none';
+            }
+
+        popup.addEventListener('click', function(event) {
+            if (event.target === this) {
+            closeInfo();
+            }
+        });
+
+        closeBtn.addEventListener('click', closeInfo);
+
+//плавное появление блоков при загрузке
+        document.addEventListener('DOMContentLoaded', function(){
+            var tranzBB = document.querySelectorAll('.transition');
+            var windowHeight = window.innerHeight;
+            function fadeInTranz(){
+                for (var i =0; i<tranzBB.length; i++){
+                    var tranz=tranzBB[i];
+                    var tranzPosition = tranz.getBoundingClientRect().top;
+
+                    if(tranzPosition<windowHeight){
+                        tranz.classList.add('fade-in');
+                    }
+                }
+            }
+            window.addEventListener('scroll', fadeInTranz);
+            fadeInTranz();
+        });
+//
+    </script>
+</body>
+</html>
